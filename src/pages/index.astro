@@ -3,6 +3,19 @@
 
 <html lang="en">
   <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5L9X14YT3G"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-5L9X14YT3G");
+    </script>
+
     <meta charset="utf-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
@@ -51,7 +64,7 @@
         color: orangered;
       }
 
-      button{
+      button {
         margin-top: 2rem;
         padding: 1.5rem 3rem;
         font-size: 1.5rem;
@@ -79,10 +92,10 @@
       }
 
       #main {
-       max-width: 95rem;
+        max-width: 95rem;
       }
 
-      #main h1{
+      #main h1 {
         font-size: 3rem;
         font-weight: 350;
       }
@@ -118,27 +131,25 @@
         color: orangered;
       }
 
-      @media only screen and (max-width: 800px){
-        .contact-icon img{
-          transform: scale(0.9)
+      @media only screen and (max-width: 800px) {
+        .contact-icon img {
+          transform: scale(0.9);
         }
       }
 
-      @media only screen and (max-width: 650px){
-
-      #header h1, em{
-        text-align: center;
-      }
+      @media only screen and (max-width: 650px) {
+        #header h1,
+        em {
+          text-align: center;
+        }
 
         .contact-icon {
-        padding: 0 2 0 5rem;
-      }
-        .contact-icon img{
-          transform: scale(0.8)
+          padding: 0 2 0 5rem;
+        }
+        .contact-icon img {
+          transform: scale(0.8);
         }
       }
-
-
     </style>
   </head>
   <body>
@@ -148,7 +159,9 @@
       </div>
       <h1>DARIEL CONDE</h1>
       <em>Web developer and motorcycles lover...</em>
-      <a href="/vcard.vcf" download="Dariel Conde Villa"><button class="btn">ADD CONTACT</button></a>
+      <a href="/vcard.vcf" download="Dariel Conde Villa"
+        ><button class="btn">ADD CONTACT</button></a
+      >
     </header>
     <main id="main">
       <section id="contacts">
@@ -203,7 +216,7 @@
               <p>My web</p>
             </a>
           </div>
-  
+
           <div class="contact-icon">
             <a
               target="_blank"
@@ -214,7 +227,7 @@
               <p>freeCodeCamp</p>
             </a>
           </div>
-  
+
           <div class="contact-icon">
             <a
               target="_blank"
@@ -225,7 +238,7 @@
               <p>WhatsApp</p>
             </a>
           </div>
-  
+
           <div class="contact-icon">
             <a
               target="_blank"
@@ -237,7 +250,6 @@
             </a>
           </div>
         </div>
-        
       </section>
     </main>
     <footer id="footer">
