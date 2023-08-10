@@ -2,14 +2,252 @@
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Dariel Conde | BlackCoder Links</title>
+    <style>
+      *,
+      :before,
+      :after {
+        box-sizing: border-box;
+      }
+
+      html {
+        font-family: "Gill Sans Extrabold", sans-serif;
+        font-size: 62.5%;
+      }
+
+      body {
+        background-color: #1b1b32;
+        color: #ffffff;
+        line-height: 1.5;
+        padding-top: 5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      #header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 100rem;
+      }
+
+      #profile-picture img {
+        width: 20rem;
+        height: 20rem;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 0.4rem solid #ffffff;
+      }
+
+      em {
+        font-size: 1.8rem;
+        color: orangered;
+      }
+
+      button{
+        margin-top: 2rem;
+        padding: 1.5rem 3rem;
+        font-size: 1.5rem;
+        font-weight: bold;
+        background-color: transparent;
+        color: #fff;
+        border-radius: 5rem;
+        border: 3px solid #fff;
+        cursor: pointer;
+      }
+
+      #header p {
+        font-size: 1.7rem;
+        text-align: center;
+      }
+
+      #header p:first-of-type {
+        padding-top: 2rem;
+        margin-bottom: 0;
+      }
+
+      #header h1 {
+        font-size: 4rem;
+        font-weight: 300;
+      }
+
+      #main {
+       max-width: 95rem;
+      }
+
+      #main h1{
+        font-size: 3rem;
+        font-weight: 350;
+      }
+
+      .icons {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .contact-icon {
+        padding: 0 5rem 0 5rem;
+      }
+
+      .contact-icon a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-decoration: none;
+        color: #fff;
+        font-size: 2rem;
+      }
+
+      #footer {
+        padding-top: 2rem;
+        text-align: center;
+        font-size: 1.8rem;
+      }
+
+      #footer a {
+        text-decoration: none;
+        color: orangered;
+      }
+
+      @media only screen and (max-width: 800px){
+        .contact-icon img{
+          transform: scale(0.9)
+        }
+      }
+
+      @media only screen and (max-width: 650px){
+
+      #header h1, em{
+        text-align: center;
+      }
+
+        .contact-icon {
+        padding: 0 2 0 5rem;
+      }
+        .contact-icon img{
+          transform: scale(0.8)
+        }
+      }
+
+
+    </style>
+  </head>
+  <body>
+    <header id="header">
+      <div id="profile-picture">
+        <img src="/profile-pic.jpg" alt="Profile picture" />
+      </div>
+      <h1>DARIEL CONDE</h1>
+      <em>Web developer and motorcycles lover...</em>
+      <a href="/vcard.vcf" download="Dariel Conde Villa"><button class="btn">ADD CONTACT</button></a>
+    </header>
+    <main id="main">
+      <section id="contacts">
+        <h1>Let´s connect...</h1>
+
+        <div class="icons">
+          <div class="contact-icon">
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://www.linkedin.com/in/dariel-conde-villa-29b61212a/"
+            >
+              <img src="/linkedin.svg" alt="LinkedIn" />
+              <p>LinkedIn</p>
+            </a>
+          </div>
+
+          <div class="contact-icon">
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://github.com/blackcoderweb"
+            >
+              <img src="/github.svg" alt="Github" />
+              <p>GitHub</p>
+            </a>
+          </div>
+
+          <div class="contact-icon">
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://instagram.com/dalibiker?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D"
+            >
+              <img src="/instagram.svg" alt="Instagram" />
+              <p>Instagram</p>
+            </a>
+          </div>
+        </div>
+
+        <h1>Let´s work together...</h1>
+        <p><em>Contact me</em></p>
+
+        <div class="icons">
+          <div class="contact-icon">
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://blackcoderweb.github.io/personal-portfolio/"
+            >
+              <img src="/website.svg" alt="Personal portfolio" />
+              <p>My web</p>
+            </a>
+          </div>
+  
+          <div class="contact-icon">
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://www.freecodecamp.org/blackcoderweb"
+            >
+              <img src="/freecodecamp.svg" alt="freeCodeCamp" />
+              <p>freeCodeCamp</p>
+            </a>
+          </div>
+  
+          <div class="contact-icon">
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://wa.me/5215527579215"
+            >
+              <img src="/whatsapp.svg" alt="Whatsapp" />
+              <p>WhatsApp</p>
+            </a>
+          </div>
+  
+          <div class="contact-icon">
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="mailto:blackcoderweb@gmail.com"
+            >
+              <img src="/email.svg" alt="Email" />
+              <p>Email me</p>
+            </a>
+          </div>
+        </div>
+        
+      </section>
+    </main>
+    <footer id="footer">
+      <p>
+        Developed by <a
+          href="https://blackcoderweb.github.io/personal-portfolio/"
+          target="_blank"
+          rel="noreferrer">BlackCoder</a
+        >
+      </p>
+    </footer>
+  </body>
 </html>
